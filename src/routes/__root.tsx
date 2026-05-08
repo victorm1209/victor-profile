@@ -72,14 +72,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
+      { title: "Victor App" },
       {
         name: "description",
         content:
           "A personal website builder for creating elegant, portfolio-style online presences.",
       },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
+      { name: "author", content: "Victor" },
+      { property: "og:title", content: "Victor App" },
       {
         property: "og:description",
         content:
@@ -87,22 +87,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
-      { name: "twitter:title", content: "Lovable App" },
+      { name: "twitter:site", content: "@victorm1209" },
+      { name: "twitter:title", content: "Victor App" },
       {
         name: "twitter:description",
         content:
           "A personal website builder for creating elegant, portfolio-style online presences.",
-      },
-      {
-        property: "og:image",
-        content:
-          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/20ec17f0-31de-45d9-a918-ac0df2922c0b/id-preview-4b6e1f17--2d44cfbe-4b65-4995-a185-98fbb303ec07.lovable.app-1778210726718.png",
-      },
-      {
-        name: "twitter:image",
-        content:
-          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/20ec17f0-31de-45d9-a918-ac0df2922c0b/id-preview-4b6e1f17--2d44cfbe-4b65-4995-a185-98fbb303ec07.lovable.app-1778210726718.png",
       },
     ],
     links: [
