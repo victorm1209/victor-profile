@@ -23,7 +23,7 @@ export function Contact() {
               </p>
 
               <div className="mt-10 space-y-5">
-                <a href="mailto:info@vic.dev" className="flex items-start gap-4 group">
+                <a href="mailto:vmdadj@gmail.com" className="flex items-start gap-4 group">
                   <div className="rounded-xl border border-border bg-background/40 p-2.5 text-accent">
                     <Mail className="h-4 w-4" />
                   </div>
@@ -31,10 +31,10 @@ export function Contact() {
                     <div className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
                       Email
                     </div>
-                    <div className="mt-1 group-hover:text-accent">info@vic.dev</div>
+                    <div className="mt-1 group-hover:text-accent">vmdadj@gmail.com</div>
                   </div>
                 </a>
-                <a href="https://wa.me/584146697747" className="flex items-start gap-4 group">
+                <a href="https://wa.me/584242440910" className="flex items-start gap-4 group">
                   <div className="rounded-xl border border-border bg-background/40 p-2.5 text-accent">
                     <Phone className="h-4 w-4" />
                   </div>
@@ -42,7 +42,7 @@ export function Contact() {
                     <div className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
                       Teléfono
                     </div>
-                    <div className="mt-1 group-hover:text-accent">+58 414 669 7747</div>
+                    <div className="mt-1 group-hover:text-accent">+58 424 244 0910</div>
                   </div>
                 </a>
                 <div className="flex items-start gap-4">
@@ -53,7 +53,7 @@ export function Contact() {
                     <div className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
                       Ubicación
                     </div>
-                    <div className="mt-1">Venezuela · Remoto global</div>
+                    <div className="mt-1">España · Venezuela · Remoto global</div>
                   </div>
                 </div>
               </div>
@@ -62,7 +62,7 @@ export function Contact() {
             <form
               onSubmit={(e) => {
                 e.preventDefault();
-                const phone = "584146697747";
+                const phone = "584242440910";
                 const intro = "Hola Victor,";
                 const main = "*Estoy interesad@ en contactar contigo...*";
                 const detailsHeader = "*Detalles de contacto*";

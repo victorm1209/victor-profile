@@ -134,7 +134,7 @@ export function Studies() {
           <div className="mx-auto max-w-6xl px-6">
         <div className="mb-8">
           <h1 className="font-display text-4xl font-bold">Estudios y diplomas</h1>
-          <p className="mt-2 text-muted-foreground">Coloca tus PDFs en <code>/public/studies</code> y, opcionalmente, un manifest JSON en <code>/public/studies/index.json</code> con estructura <code>{'[{"title":"...","file":"/studies/x.pdf","thumb":"/studies/thumbs/x.png"}]'}</code>. Se generarán miniaturas automáticamente si no provees thumbs.</p>
+
         </div>
 
         {loading ? (

@@ -8,16 +8,16 @@ export function Footer() {
           <span className="ml-3 text-muted-foreground">© {new Date().getFullYear()}</span>
         </div>
         <div className="flex items-center gap-6 text-sm text-muted-foreground">
-          <a href="#" className="hover:text-foreground">
+          <a href="" className="hover:text-foreground">
             LinkedIn
           </a>
-          <a href="#" className="hover:text-foreground">
+          <a href="https://github.com/victorm1209" className="hover:text-foreground">
             GitHub
           </a>
-          <a href="#" className="hover:text-foreground">
+          <a href="https://x.com/victorm1209?s=11" className="hover:text-foreground">
             Twitter / X
           </a>
-          <a href="#" className="hover:text-foreground">
+          <a href="https://www.instagram.com/victorm1209" className="hover:text-foreground">
             Instagram
           </a>
         </div>
