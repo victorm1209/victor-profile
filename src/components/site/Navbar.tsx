@@ -3,7 +3,7 @@ import { ArrowUpRight, Menu, X } from "lucide-react";
 
 const links = [
   { href: "#servicios", label: "Servicios" },
-  { href: "#proyectos", label: "Proyectos" },
+  { href: "#proyectos", label: "Experiencia" },
   { href: "#proceso", label: "Proceso" },
   { href: "#testimonios", label: "Testimonios" },
   { href: "#contacto", label: "Contacto" },
@@ -30,8 +30,8 @@ export function Navbar() {
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
         <a href="#" className="font-mono text-sm font-medium tracking-tight">
-          <span className="text-foreground">sabo</span>
-          <span className="text-accent">.dev</span>
+          <span className="text-foreground">qa</span>
+          <span className="text-accent">.engineer</span>
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -48,10 +48,11 @@ export function Navbar() {
 
         <div className="flex items-center gap-3">
           <a
-            href="#contacto"
+            href="/cv.pdf"
+            download
             className="hidden items-center gap-1.5 rounded-full bg-foreground px-4 py-2 text-sm font-medium text-background transition-transform hover:scale-[1.03] md:inline-flex"
           >
-            Hablemos
+            Descargar CV
             <ArrowUpRight className="h-3.5 w-3.5" />
           </a>
           <button
