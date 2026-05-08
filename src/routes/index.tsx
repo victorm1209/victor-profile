@@ -1,26 +1,51 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/site/Navbar";
+import { Hero } from "@/components/site/Hero";
+import { TechMarquee } from "@/components/site/TechMarquee";
+import { Services } from "@/components/site/Services";
+import { WhyUs } from "@/components/site/WhyUs";
+import { Process } from "@/components/site/Process";
+import { Projects } from "@/components/site/Projects";
+import { Testimonials } from "@/components/site/Testimonials";
+import { Faq } from "@/components/site/Faq";
+import { Contact } from "@/components/site/Contact";
+import { Footer } from "@/components/site/Footer";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "sabo.dev — Artesanos en la era de la IA" },
+      {
+        name: "description",
+        content:
+          "Agencia de desarrollo web y mobile. Convertimos tu idea en un producto digital rápido, bien diseñado y construido para crecer.",
+      },
+      { property: "og:title", content: "sabo.dev — Artesanos en la era de la IA" },
+      {
+        property: "og:description",
+        content: "Agencia de desarrollo web y mobile. Productos digitales que generan resultados.",
+      },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
+function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-background text-foreground">
+      <Navbar />
+      <main>
+        <Hero />
+        <TechMarquee />
+        <Services />
+        <WhyUs />
+        <Process />
+        <Projects />
+        <Testimonials />
+        <Faq />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
-}
-
-function Index() {
-  return <PlaceholderIndex />;
 }
