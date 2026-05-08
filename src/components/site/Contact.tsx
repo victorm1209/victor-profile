@@ -1,0 +1,94 @@
+import { ArrowUpRight, Mail, Phone, MapPin } from "lucide-react";
+import { SectionLabel } from "./SectionLabel";
+
+export function Contact() {
+  return (
+    <section id="contacto" className="relative py-32">
+      <div className="mx-auto max-w-7xl px-6">
+        <div className="rounded-3xl border border-border bg-card p-10 md:p-16">
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
+            <div>
+              <SectionLabel>Contacto</SectionLabel>
+              <h2 className="font-display mt-4 text-balance text-5xl font-bold leading-[0.95] md:text-6xl">
+                Trabajemos <span className="italic text-accent">juntos</span>.
+              </h2>
+              <p className="mt-6 max-w-md text-muted-foreground">
+                ¿Tienes un proyecto en mente? Estamos disponibles para nuevas oportunidades y colaboraciones. Respondemos en menos de 24 horas.
+              </p>
+
+              <div className="mt-10 space-y-5">
+                <a href="mailto:info@sabo.dev" className="flex items-start gap-4 group">
+                  <div className="rounded-xl border border-border bg-background/40 p-2.5 text-accent">
+                    <Mail className="h-4 w-4" />
+                  </div>
+                  <div>
+                    <div className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground">Email</div>
+                    <div className="mt-1 group-hover:text-accent">info@sabo.dev</div>
+                  </div>
+                </a>
+                <a href="https://wa.me/584146697747" className="flex items-start gap-4 group">
+                  <div className="rounded-xl border border-border bg-background/40 p-2.5 text-accent">
+                    <Phone className="h-4 w-4" />
+                  </div>
+                  <div>
+                    <div className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground">Teléfono</div>
+                    <div className="mt-1 group-hover:text-accent">+58 414 669 7747</div>
+                  </div>
+                </a>
+                <div className="flex items-start gap-4">
+                  <div className="rounded-xl border border-border bg-background/40 p-2.5 text-accent">
+                    <MapPin className="h-4 w-4" />
+                  </div>
+                  <div>
+                    <div className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground">Ubicación</div>
+                    <div className="mt-1">Venezuela · Remoto global</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <form
+              onSubmit={(e) => e.preventDefault()}
+              className="flex flex-col gap-4 rounded-2xl border border-border bg-background/40 p-8"
+            >
+              <Field label="Nombre" placeholder="Tu nombre" />
+              <Field label="Email" placeholder="tucorreo@empresa.com" type="email" />
+              <Field label="Asunto" placeholder="¿De qué hablamos?" />
+              <div>
+                <label className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
+                  Mensaje
+                </label>
+                <textarea
+                  rows={5}
+                  placeholder="Cuéntanos sobre tu proyecto…"
+                  className="mt-2 w-full resize-none rounded-xl border border-border bg-card/50 px-4 py-3 text-sm text-foreground outline-none transition placeholder:text-muted-foreground/60 focus:border-accent"
+                />
+              </div>
+              <button
+                type="submit"
+                className="group mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-6 py-3.5 text-sm font-medium text-background transition-transform hover:scale-[1.02]"
+              >
+                Enviar mensaje
+                <ArrowUpRight className="h-4 w-4 transition-transform group-hover:rotate-45" />
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Field({ label, ...props }: { label: string } & React.InputHTMLAttributes<HTMLInputElement>) {
+  return (
+    <div>
+      <label className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
+        {label}
+      </label>
+      <input
+        {...props}
+        className="mt-2 w-full rounded-xl border border-border bg-card/50 px-4 py-3 text-sm text-foreground outline-none transition placeholder:text-muted-foreground/60 focus:border-accent"
+      />
+    </div>
+  );
+}
