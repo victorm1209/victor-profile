@@ -2,12 +2,42 @@ import { ArrowUpRight } from "lucide-react";
 import { SectionLabel } from "./SectionLabel";
 
 const projects = [
-  { n: "01", title: "All Camps Kids", desc: "SaaS para gestión de campamentos con pagos integrados.", tags: ["Next.js","TypeScript","Tailwind","Supabase"] },
-  { n: "02", title: "Champions Truck Repair", desc: "Sitio web de servicios con formularios y galería.", tags: ["Next.js","TypeScript","Tailwind"] },
-  { n: "03", title: "Diveteca", desc: "E-commerce veterinario con pasarela de pagos y CMS.", tags: ["Next.js","TypeScript","Tailwind"] },
-  { n: "04", title: "Madre Mia Store", desc: "E-commerce skincare con pagos y gestión de productos.", tags: ["Next.js","TypeScript","Tailwind"] },
-  { n: "05", title: "Mykonos Greek", desc: "Comercio electrónico con admin y carrito completo.", tags: ["Next.js","Supabase","Node.js"] },
-  { n: "06", title: "Textiles Studio", desc: "Tienda de textiles con recomendaciones de productos.", tags: ["Next.js","TypeScript","Tailwind"] },
+  {
+    n: "01",
+    title: "All Camps Kids",
+    desc: "SaaS para gestión de campamentos con pagos integrados.",
+    tags: ["Next.js", "TypeScript", "Tailwind", "Supabase"],
+  },
+  {
+    n: "02",
+    title: "Champions Truck Repair",
+    desc: "Sitio web de servicios con formularios y galería.",
+    tags: ["Next.js", "TypeScript", "Tailwind"],
+  },
+  {
+    n: "03",
+    title: "Diveteca",
+    desc: "E-commerce veterinario con pasarela de pagos y CMS.",
+    tags: ["Next.js", "TypeScript", "Tailwind"],
+  },
+  {
+    n: "04",
+    title: "Madre Mia Store",
+    desc: "E-commerce skincare con pagos y gestión de productos.",
+    tags: ["Next.js", "TypeScript", "Tailwind"],
+  },
+  {
+    n: "05",
+    title: "Mykonos Greek",
+    desc: "Comercio electrónico con admin y carrito completo.",
+    tags: ["Next.js", "Supabase", "Node.js"],
+  },
+  {
+    n: "06",
+    title: "Textiles Studio",
+    desc: "Tienda de textiles con recomendaciones de productos.",
+    tags: ["Next.js", "TypeScript", "Tailwind"],
+  },
 ];
 
 export function Projects() {
@@ -22,7 +52,8 @@ export function Projects() {
             </h2>
           </div>
           <p className="max-w-md text-muted-foreground">
-            Una selección de los proyectos más recientes, construidos con tecnologías modernas y metodologías ágiles.
+            Una selección de los proyectos más recientes, construidos con tecnologías modernas y
+            metodologías ágiles.
           </p>
         </div>
 
@@ -35,9 +66,7 @@ export function Projects() {
             >
               <div className="aspect-[16/9] overflow-hidden rounded-xl bg-gradient-to-br from-secondary via-card to-background">
                 <div className="flex h-full w-full items-center justify-center">
-                  <span className="font-display text-7xl font-bold text-foreground/10">
-                    {p.n}
-                  </span>
+                  <span className="font-display text-7xl font-bold text-foreground/10">{p.n}</span>
                 </div>
               </div>
               <div className="mt-6 flex items-start justify-between gap-4">

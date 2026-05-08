@@ -1,4 +1,5 @@
 import { ArrowUpRight, Download } from "lucide-react";
+import { useEffect, useRef } from "react";
 
 const stats = [
   { value: "8+", label: "Años en QA" },
@@ -7,6 +8,33 @@ const stats = [
 ];
 
 export function Hero() {
+  const headingRef = useRef<HTMLHeadingElement | null>(null);
+
+  useEffect(() => {
+    const el = headingRef.current;
+    if (!el) return;
+    const nodes = Array.from(el.querySelectorAll(".reveal")) as HTMLElement[];
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            nodes.forEach((n, i) => {
+              n.style.transitionDelay = `${i * 80}ms`;
+              n.classList.add("reveal--active");
+            });
+            observer.disconnect();
+          }
+        });
+      },
+      { threshold: 0.15 },
+    );
+
+    observer.observe(el);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section className="relative overflow-hidden pt-32 pb-24 md:pt-44 md:pb-32">
       {/* glow */}
@@ -21,15 +49,26 @@ export function Hero() {
           Ingeniero de Control de Calidad · QA
         </span>
 
-        <h1 className="font-display mt-8 text-balance text-6xl font-bold leading-[0.95] md:text-8xl lg:text-[9rem]">
-          Calidad
-          <span className="block text-foreground/15">sin defectos</span>
-          <span className="block">desde el día 1<span className="text-accent">.</span></span>
+        <h1
+          ref={headingRef}
+          className="font-display mt-8 text-balance text-6xl font-bold leading-[0.95] md:text-8xl lg:text-[9rem]"
+        >
+          <span className="reveal">
+            <span className="reveal-inner">Calidad</span>
+          </span>
+          <span className="block reveal">
+            <span className="reveal-inner text-foreground/15">sin defectos</span>
+          </span>
+          <span className="block reveal">
+            <span className="reveal-inner">
+              desde el día 1<span className="text-accent">.</span>
+            </span>
+          </span>
         </h1>
 
         <p className="mx-auto mt-8 max-w-xl text-balance text-base text-muted-foreground md:text-lg">
-          Pruebas manuales, automatización, performance y procesos. Aseguro
-          que tu producto llegue a producción rápido, estable y bien testeado.
+          Pruebas manuales, automatización, performance y procesos. Aseguro que tu producto llegue a
+          producción rápido, estable y bien testeado.
         </p>
 
         <div className="mt-10 flex flex-wrap items-center justify-center gap-3">

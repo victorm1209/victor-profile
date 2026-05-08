@@ -7,12 +7,30 @@ import {
 } from "@/components/ui/accordion";
 
 const faqs = [
-  { q: "¿Cuál es el proceso de desarrollo?", a: "Trabajamos en cuatro fases: descubrimiento, diseño, desarrollo y lanzamiento, con check-ins constantes." },
-  { q: "¿Cuánto tiempo toma un proyecto?", a: "Depende del alcance. Un MVP toma 4-8 semanas; productos completos entre 2 y 4 meses." },
-  { q: "¿Qué tecnologías utilizan?", a: "Next.js, React, React Native, TypeScript, Node.js, Supabase y PostgreSQL como stack principal." },
-  { q: "¿Ofrecen mantenimiento post-lanzamiento?", a: "Sí. Ofrecemos planes de soporte mensuales con SLA, monitoreo y mejoras continuas." },
-  { q: "¿Trabajan con startups y empresas?", a: "Sí, desde fundadores en early stage hasta equipos enterprise." },
-  { q: "¿Cómo puedo comenzar un proyecto?", a: "Escríbenos por el formulario o WhatsApp. Agendamos una llamada de descubrimiento gratuita." },
+  {
+    q: "¿Cuál es el proceso de desarrollo?",
+    a: "Trabajamos en cuatro fases: descubrimiento, diseño, desarrollo y lanzamiento, con check-ins constantes.",
+  },
+  {
+    q: "¿Cuánto tiempo toma un proyecto?",
+    a: "Depende del alcance. Un MVP toma 4-8 semanas; productos completos entre 2 y 4 meses.",
+  },
+  {
+    q: "¿Qué tecnologías utilizan?",
+    a: "Next.js, React, React Native, TypeScript, Node.js, Supabase y PostgreSQL como stack principal.",
+  },
+  {
+    q: "¿Ofrecen mantenimiento post-lanzamiento?",
+    a: "Sí. Ofrecemos planes de soporte mensuales con SLA, monitoreo y mejoras continuas.",
+  },
+  {
+    q: "¿Trabajan con startups y empresas?",
+    a: "Sí, desde fundadores en early stage hasta equipos enterprise.",
+  },
+  {
+    q: "¿Cómo puedo comenzar un proyecto?",
+    a: "Escríbenos por el formulario o WhatsApp. Agendamos una llamada de descubrimiento gratuita.",
+  },
 ];
 
 export function Faq() {
@@ -35,9 +53,7 @@ export function Faq() {
               <AccordionTrigger className="font-display text-left text-lg font-medium hover:text-accent hover:no-underline">
                 {f.q}
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground">
-                {f.a}
-              </AccordionContent>
+              <AccordionContent className="text-muted-foreground">{f.a}</AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>

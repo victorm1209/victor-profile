@@ -46,7 +46,8 @@ export function Services() {
             </h2>
           </div>
           <p className="max-w-md text-muted-foreground">
-            Aseguramiento de calidad de extremo a extremo: desde el diseño de casos de prueba hasta la automatización integrada en tu pipeline.
+            Aseguramiento de calidad de extremo a extremo: desde el diseño de casos de prueba hasta
+            la automatización integrada en tu pipeline.
           </p>
         </div>
 

@@ -1,7 +1,22 @@
 const TECHS = [
-  "Selenium","Cypress","Playwright","Postman","JMeter","TestRail",
-  "Jira","Azure DevOps","Jenkins","Git","SQL","Appium",
-  "Katalon","SoapUI","BrowserStack","Allure","K6","Xray",
+  "Selenium",
+  "Cypress",
+  "Playwright",
+  "Postman",
+  "JMeter",
+  "TestRail",
+  "Jira",
+  "Azure DevOps",
+  "Jenkins",
+  "Git",
+  "SQL",
+  "Appium",
+  "Katalon",
+  "SoapUI",
+  "BrowserStack",
+  "Allure",
+  "K6",
+  "Xray",
 ];
 
 export function TechMarquee() {

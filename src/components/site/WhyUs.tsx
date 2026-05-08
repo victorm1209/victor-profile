@@ -30,15 +30,7 @@ export function WhyUs() {
                 <span className="h-2.5 w-2.5 rounded-full bg-emerald-500/70" />
                 <span className="ml-3 text-muted-foreground">main.ts</span>
               </div>
-              <pre className="text-foreground/90"><code>{`// sabo.dev
-export async function build() {
-  const app = await create({
-    framework: "next.js",
-    quality: "exceptional",
-    performance: Infinity,
-  });
-  return app.deploy();
-}`}</code></pre>
+              {/* Bloque de código eliminado por solicitud del usuario */}
             </div>
           </div>
 
@@ -57,7 +49,7 @@ export async function build() {
 
           <div className="rounded-2xl border border-border bg-card p-8">
             <div className="flex flex-wrap gap-2">
-              {["</>","React","Next","Node","TS","RN","Expo"].map((t) => (
+              {["</>", "React", "Next", "Node", "TS", "RN", "Expo"].map((t) => (
                 <span
                   key={t}
                   className="rounded-full border border-border bg-secondary px-3 py-1 font-mono text-xs text-muted-foreground"

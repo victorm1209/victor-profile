@@ -1,7 +1,12 @@
 import { ArrowUpRight, Mail, Phone, MapPin } from "lucide-react";
+import { useState } from "react";
 import { SectionLabel } from "./SectionLabel";
 
 export function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
   return (
     <section id="contacto" className="relative py-32">
       <div className="mx-auto max-w-7xl px-6">
@@ -13,17 +18,20 @@ export function Contact() {
                 Trabajemos <span className="italic text-accent">juntos</span>.
               </h2>
               <p className="mt-6 max-w-md text-muted-foreground">
-                ¿Tienes un proyecto en mente? Estamos disponibles para nuevas oportunidades y colaboraciones. Respondemos en menos de 24 horas.
+                ¿Tienes un proyecto en mente? Estamos disponibles para nuevas oportunidades y
+                colaboraciones. Respondemos en menos de 24 horas.
               </p>
 
               <div className="mt-10 space-y-5">
-                <a href="mailto:info@sabo.dev" className="flex items-start gap-4 group">
+                <a href="mailto:info@vic.dev" className="flex items-start gap-4 group">
                   <div className="rounded-xl border border-border bg-background/40 p-2.5 text-accent">
                     <Mail className="h-4 w-4" />
                   </div>
                   <div>
-                    <div className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground">Email</div>
-                    <div className="mt-1 group-hover:text-accent">info@sabo.dev</div>
+                    <div className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
+                      Email
+                    </div>
+                    <div className="mt-1 group-hover:text-accent">info@vic.dev</div>
                   </div>
                 </a>
                 <a href="https://wa.me/584146697747" className="flex items-start gap-4 group">
@@ -31,7 +39,9 @@ export function Contact() {
                     <Phone className="h-4 w-4" />
                   </div>
                   <div>
-                    <div className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground">Teléfono</div>
+                    <div className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
+                      Teléfono
+                    </div>
                     <div className="mt-1 group-hover:text-accent">+58 414 669 7747</div>
                   </div>
                 </a>
@@ -40,7 +50,9 @@ export function Contact() {
                     <MapPin className="h-4 w-4" />
                   </div>
                   <div>
-                    <div className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground">Ubicación</div>
+                    <div className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
+                      Ubicación
+                    </div>
                     <div className="mt-1">Venezuela · Remoto global</div>
                   </div>
                 </div>
@@ -48,19 +60,65 @@ export function Contact() {
             </div>
 
             <form
-              onSubmit={(e) => e.preventDefault()}
+              onSubmit={(e) => {
+                e.preventDefault();
+                const phone = "584146697747";
+                const intro = "Hola Victor,";
+                const main = "*Estoy interesad@ en contactar contigo...*";
+                const detailsHeader = "*Detalles de contacto*";
+                const details = `*Nombre:* ${name || "—"}\n*Email:* ${email || "—"}\n*Asunto:* ${subject || "—"}`;
+                const body = `${message || "—"}`;
+
+                const text = `${intro}\n\n${main}\n\n${detailsHeader}\n${details}\n\n*Mensaje:*\n${body}`;
+
+                const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+                window.open(url, "_blank");
+              }}
               className="flex flex-col gap-4 rounded-2xl border border-border bg-background/40 p-8"
             >
-              <Field label="Nombre" placeholder="Tu nombre" />
-              <Field label="Email" placeholder="tucorreo@empresa.com" type="email" />
-              <Field label="Asunto" placeholder="¿De qué hablamos?" />
+              <Field
+                label="Nombre"
+                name="name"
+                id="contact-name"
+                autoComplete="name"
+                placeholder="Tu nombre"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+              <Field
+                label="Email"
+                name="email"
+                id="contact-email"
+                autoComplete="email"
+                placeholder="tucorreo@empresa.com"
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <Field
+                label="Asunto"
+                name="subject"
+                id="contact-subject"
+                autoComplete="off"
+                placeholder="¿De qué hablamos?"
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
+              />
               <div>
-                <label className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
+                <label
+                  htmlFor="contact-message"
+                  className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground"
+                >
                   Mensaje
                 </label>
                 <textarea
+                  id="contact-message"
+                  name="message"
+                  autoComplete="off"
                   rows={5}
                   placeholder="Cuéntanos sobre tu proyecto…"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   className="mt-2 w-full resize-none rounded-xl border border-border bg-card/50 px-4 py-3 text-sm text-foreground outline-none transition placeholder:text-muted-foreground/60 focus:border-accent"
                 />
               </div>
@@ -79,13 +137,25 @@ export function Contact() {
   );
 }
 
-function Field({ label, ...props }: { label: string } & React.InputHTMLAttributes<HTMLInputElement>) {
+function Field({
+  label,
+  id,
+  name,
+  ...props
+}: { label: string; id?: string; name?: string } & React.InputHTMLAttributes<HTMLInputElement>) {
+  const inputId =
+    id ?? (name ? `contact-${name}` : `contact-${label.toLowerCase().replace(/\s+/g, "-")}`);
   return (
     <div>
-      <label className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
+      <label
+        htmlFor={inputId}
+        className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground"
+      >
         {label}
       </label>
       <input
+        id={inputId}
+        name={name}
         {...props}
         className="mt-2 w-full rounded-xl border border-border bg-card/50 px-4 py-3 text-sm text-foreground outline-none transition placeholder:text-muted-foreground/60 focus:border-accent"
       />

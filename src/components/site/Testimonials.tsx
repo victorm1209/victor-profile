@@ -1,12 +1,30 @@
-import { SectionLabel } from "./SectionLabel";
+/* import { SectionLabel } from "./SectionLabel";   (comentado) */
 
 const items = [
-  { quote: "Increíble trabajo en nuestro nuevo sitio web. Las ventas aumentaron un 40% desde el lanzamiento.", initials: "CR", name: "Carlos Rodríguez", role: "CEO, TechRetail" },
-  { quote: "Recomiendo totalmente sus servicios. Nuestra app móvil fue desarrollada en tiempo récord.", initials: "MG", name: "María González", role: "Directora de Producto, FinApp" },
-  { quote: "La migración de nuestro sistema legacy a una arquitectura moderna fue impecable.", initials: "JL", name: "Javier López", role: "CTO, DataSoft" },
+  {
+    quote:
+      "Increíble trabajo en nuestro nuevo sitio web. Las ventas aumentaron un 40% desde el lanzamiento.",
+    initials: "CR",
+    name: "Carlos Rodríguez",
+    role: "CEO, TechRetail",
+  },
+  {
+    quote:
+      "Recomiendo totalmente sus servicios. Nuestra app móvil fue desarrollada en tiempo récord.",
+    initials: "MG",
+    name: "María González",
+    role: "Directora de Producto, FinApp",
+  },
+  {
+    quote: "La migración de nuestro sistema legacy a una arquitectura moderna fue impecable.",
+    initials: "JL",
+    name: "Javier López",
+    role: "CTO, DataSoft",
+  },
 ];
 
 export function Testimonials() {
+  return null;
   return (
     <section id="testimonios" className="relative py-32">
       <div className="mx-auto max-w-7xl px-6">
