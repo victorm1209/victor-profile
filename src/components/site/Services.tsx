@@ -1,36 +1,36 @@
-import { Code2, Server, Smartphone, Gauge, Palette, Rocket } from "lucide-react";
+import { ClipboardCheck, Bot, Gauge, ShieldCheck, Workflow, Bug } from "lucide-react";
 import { SectionLabel } from "./SectionLabel";
 
 const services = [
   {
-    icon: Code2,
-    title: "Desarrollo Frontend",
-    desc: "Interfaces modernas y responsivas con Next.js, React y Tailwind CSS para una experiencia de usuario excepcional.",
+    icon: ClipboardCheck,
+    title: "Pruebas Manuales",
+    desc: "Diseño de casos de prueba, exploratorias, regresión y UAT con cobertura funcional y de criterios de aceptación.",
   },
   {
-    icon: Server,
-    title: "Desarrollo Backend",
-    desc: "APIs robustas y escalables con Node.js, Express, PostgreSQL y MongoDB para potenciar tus aplicaciones.",
+    icon: Bot,
+    title: "Automatización",
+    desc: "Frameworks de automatización con Selenium, Cypress y Playwright. Integración continua y reportes claros.",
   },
   {
-    icon: Smartphone,
-    title: "Desarrollo Mobile",
-    desc: "Aplicaciones nativas y cross-platform con React Native y Expo para llegar a usuarios en todas las plataformas.",
+    icon: Bug,
+    title: "Pruebas de API",
+    desc: "Validación de endpoints REST y SOAP con Postman, RestAssured y SoapUI; contratos y datos verificados.",
   },
   {
     icon: Gauge,
-    title: "Performance",
-    desc: "Mejora la velocidad y eficiencia de tus aplicaciones existentes con auditorías y optimización de rendimiento.",
+    title: "Performance & Carga",
+    desc: "Pruebas de stress y carga con JMeter y K6 para garantizar estabilidad bajo demanda real.",
   },
   {
-    icon: Palette,
-    title: "Diseño UI/UX",
-    desc: "Interfaces intuitivas y atractivas que mejoran la experiencia del usuario y aumentan la conversión.",
+    icon: ShieldCheck,
+    title: "QA de Procesos",
+    desc: "Mejora continua, definición de DoD/DoR, métricas, planes de prueba y gestión de defectos en Jira/TestRail.",
   },
   {
-    icon: Rocket,
-    title: "Despliegue & DevOps",
-    desc: "Configuración de infraestructura, CI/CD y monitoreo para mantener tus aplicaciones en producción.",
+    icon: Workflow,
+    title: "QA en CI/CD",
+    desc: "Integración de suites en Jenkins, GitHub Actions y Azure DevOps con shift-left testing y reportes Allure.",
   },
 ];
 
@@ -42,11 +42,11 @@ export function Services() {
           <div className="max-w-2xl">
             <SectionLabel>Servicios</SectionLabel>
             <h2 className="font-display mt-4 text-balance text-5xl font-bold leading-[0.95] md:text-6xl">
-              Lo que hacemos.
+              Lo que hago.
             </h2>
           </div>
           <p className="max-w-md text-muted-foreground">
-            Desarrollo de soluciones digitales completas, desde aplicaciones web hasta sistemas móviles, usando las tecnologías más modernas.
+            Aseguramiento de calidad de extremo a extremo: desde el diseño de casos de prueba hasta la automatización integrada en tu pipeline.
           </p>
         </div>
 

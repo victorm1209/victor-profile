@@ -1,7 +1,7 @@
 const TECHS = [
-  "Next.js","React","React Native","TypeScript","Node.js","Tailwind CSS",
-  "PostgreSQL","Supabase","Vercel","Express","MongoDB","Expo",
-  "Flutter","Firebase","GraphQL","Docker",
+  "Selenium","Cypress","Playwright","Postman","JMeter","TestRail",
+  "Jira","Azure DevOps","Jenkins","Git","SQL","Appium",
+  "Katalon","SoapUI","BrowserStack","Allure","K6","Xray",
 ];
 
 export function TechMarquee() {
