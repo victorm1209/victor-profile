@@ -2,9 +2,9 @@ import { ArrowUpRight, Download } from "lucide-react";
 import { useEffect, useRef } from "react";
 
 const stats = [
-  { value: "8+", label: "Años en QA" },
-  { value: "30+", label: "Proyectos QA" },
-  { value: "15+", label: "Herramientas" },
+  { value: "5+", label: "Años en QA" },
+  { value: "30+", label: "Proyectos Involucrado" },
+  { value: "10+", label: "Herramientas Usadas" },
 ];
 
 export function Hero() {
@@ -68,7 +68,7 @@ export function Hero() {
 
         <p className="mx-auto mt-8 max-w-xl text-balance text-base text-muted-foreground md:text-lg">
           Pruebas manuales, automatización, performance y procesos. Aseguro que tu producto llegue a
-          producción rápido, estable y bien testeado.
+          producción rápido y estable.
         </p>
 
         <div className="mt-10 flex flex-wrap items-center justify-center gap-3">

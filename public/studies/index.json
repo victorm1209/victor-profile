@@ -1,6 +1,142 @@
 [
   {
-    "title": "CV",
-    "file": "/studies/cv.pdf"
+    "title": "Materia de Prevención y Control de LC/FT/FPADM Dirigida a Todo el Personal.",
+    "file": "/studies/Materia de Prevencion y Control de LCFTFPADM Dirigida a Todo el Personal.pdf"
+  },
+  {
+    "title": "Blindaje sistémico: prevención de lc/ft/fpadm en el ecosistema de pagos digitales",
+    "file": "/studies/Blindaje sistemico prevencion de lcftfpadm en el ecosistema de pagos digitales.pdf"
+  },
+  {
+    "title": "Automatización pruebas",
+    "file": "/studies/diploma-automatizacion-pruebas.pdf"
+  },
+  {
+    "title": "Backend Node.js Postgres",
+    "file": "/studies/diploma-backend-nodejs-postgres.pdf"
+  },
+  {
+    "title": "Backend Node.js",
+    "file": "/studies/diploma-backend-nodejs.pdf"
+  },
+  {
+    "title": "Básico pronunciación",
+    "file": "/studies/diploma-basico-pronunciacion.pdf"
+  },
+  {
+    "title": "Básico vocabulario expresiones",
+    "file": "/studies/diploma-basico-vocabulario-expresiones.pdf"
+  },
+  {
+    "title": "Dart",
+    "file": "/studies/diploma-dart.pdf"
+  },
+  {
+    "title": "ECMAScript 6",
+    "file": "/studies/diploma-ecmascript-6.pdf"
+  },
+  {
+    "title": "Excel básico",
+    "file": "/studies/diploma-excel-basico.pdf"
+  },
+  {
+    "title": "Excel intermedio",
+    "file": "/studies/diploma-excel-intermedio.pdf"
+  },
+  {
+    "title": "Excel intro",
+    "file": "/studies/diploma-excel-intro.pdf"
+  },
+  {
+    "title": "Fechas horas expresiones simples",
+    "file": "/studies/diploma-fechas-horas-expresiones-simples.pdf"
+  },
+  {
+    "title": "Frontend developer práctico",
+    "file": "/studies/diploma-frontend-developer-practico.pdf"
+  },
+  {
+    "title": "Frontend developer",
+    "file": "/studies/diploma-frontend-developer.pdf"
+  },
+  {
+    "title": "Fundamentos de Node",
+    "file": "/studies/diploma-fundamentos-node.pdf"
+  },
+  {
+    "title": "Git y GitHub",
+    "file": "/studies/diploma-gitgithub.pdf"
+  },
+  {
+    "title": "GPT con Google Sheets",
+    "file": "/studies/diploma-gpt-con-google-sheets.pdf"
+  },
+  {
+    "title": "Historias de usuario Scrum",
+    "file": "/studies/diploma-historias-usuario-scrum.pdf"
+  },
+  {
+    "title": "HTML y CSS",
+    "file": "/studies/diploma-html-css.pdf"
+  },
+  {
+    "title": "HTML práctico",
+    "file": "/studies/diploma-html-practico.pdf"
+  },
+  {
+    "title": "Inglés básico principiantes",
+    "file": "/studies/diploma-ingles-basico-principiantes.pdf"
+  },
+  {
+    "title": "Lovable",
+    "file": "/studies/diploma-lovable.pdf"
+  },
+  {
+    "title": "Marca personal",
+    "file": "/studies/diploma-marca-personal.pdf"
+  },
+  {
+    "title": "Mobile first",
+    "file": "/studies/diploma-mobile-first.pdf"
+  },
+  {
+    "title": "N8n",
+    "file": "/studies/diploma-n8n.pdf"
+  },
+  {
+    "title": "Presente simple vocabulario común",
+    "file": "/studies/diploma-presente-simple-vocabulario-comun.pdf"
+  },
+  {
+    "title": "Prework Linux",
+    "file": "/studies/diploma-prework-linux.pdf"
+  },
+  {
+    "title": "Procrastinación",
+    "file": "/studies/diploma-procrastinacion.pdf"
+  },
+  {
+    "title": "Pruebas de software",
+    "file": "/studies/diploma-pruebas-software.pdf"
+  },
+  {
+    "title": "Puppeteer",
+    "file": "/studies/diploma-puppeteer.pdf"
+  },
+  {
+    "title": "Scrum Master",
+    "file": "/studies/diploma-scrum-master.pdf"
+  },
+  {
+    "title": "Scrum",
+    "file": "/studies/diploma-scrum.pdf"
+  },
+  {
+    "title": "Terminal",
+    "file": "/studies/diploma-terminal.pdf"
+  },
+  {
+    "title": "Web ChatGPT",
+    "file": "/studies/diploma-web-chatgpt.pdf"
   }
 ]

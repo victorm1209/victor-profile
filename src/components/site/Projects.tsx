@@ -52,7 +52,7 @@ export function Projects() {
             </h2>
           </div>
           <p className="max-w-md text-muted-foreground">
-            Una selección de los proyectos más recientes, construidos con tecnologías modernas y
+            Una selección de los proyectos más recientes, revisados con tecnologías modernas y
             metodologías ágiles.
           </p>
         </div>

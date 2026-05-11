@@ -10,7 +10,7 @@ export function WhyUs() {
             Construido <span className="italic text-accent">diferente</span>.
           </h2>
           <p className="mt-6 max-w-md text-muted-foreground">
-            No solo escribimos código. Diseñamos sistemas que escalan, rinden y se mantienen.
+            No solo encontramos bugs. Diseñamos sistemas de automatización que escalan, rinden y se mantienen.
           </p>
         </div>
 
@@ -20,7 +20,7 @@ export function WhyUs() {
               Proyectos entregados
             </div>
             <div className="font-display mt-6 text-7xl font-bold tracking-tighter md:text-8xl">
-              70<span className="text-accent">+</span>
+              30<span className="text-accent">+</span>
             </div>
 
             <div className="mt-10 rounded-xl border border-border bg-background/60 p-5 font-mono text-[12px] leading-relaxed">
@@ -35,8 +35,8 @@ export function WhyUs() {
           </div>
 
           <div className="rounded-2xl border border-border bg-card p-8">
-            <div className="font-display text-5xl font-bold md:text-6xl">&lt;0.5s</div>
-            <div className="mt-3 text-sm text-muted-foreground">Tiempo de carga promedio</div>
+            <div className="font-display text-5xl font-bold md:text-6xl">87%</div>
+            <div className="mt-3 text-sm text-muted-foreground">Reducción de tiempo automatizando pruebas.</div>
           </div>
 
           <div className="rounded-2xl border border-border bg-card p-8">
@@ -44,10 +44,15 @@ export function WhyUs() {
               <span className="h-2 w-2 animate-pulse rounded-full bg-emerald-400" />
               <span className="font-display text-3xl font-bold md:text-4xl">Disponible</span>
             </div>
-            <div className="mt-3 text-sm text-muted-foreground">Para nuevos proyectos</div>
+            <div className="mt-3 text-sm text-muted-foreground">Para nuevos proyectos, trabajos remotos y presenciales.</div>
           </div>
 
           <div className="rounded-2xl border border-border bg-card p-8">
+            <div className="font-display text-5xl font-bold md:text-6xl">95%</div>
+            <div className="mt-3 text-sm text-muted-foreground">Hasta un 95% de reducción de bugs en ambientes productivos.</div>
+          </div>
+
+          {/* <div className="rounded-2xl border border-border bg-card p-8">
             <div className="flex flex-wrap gap-2">
               {["</>", "React", "Next", "Node", "TS", "RN", "Expo"].map((t) => (
                 <span
@@ -59,11 +64,11 @@ export function WhyUs() {
               ))}
             </div>
             <div className="mt-4 font-display text-2xl font-bold">Stack moderno</div>
-          </div>
+          </div> */}
 
           <div className="rounded-2xl border border-border bg-card p-8">
             <div className="font-display text-3xl font-bold md:text-4xl">Remoto global</div>
-            <div className="mt-3 text-sm text-muted-foreground">Venezuela · USA · Latam</div>
+            <div className="mt-3 text-sm text-muted-foreground">Europa · Latam · North America</div>
           </div>
         </div>
       </div>

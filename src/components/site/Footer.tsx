@@ -4,7 +4,7 @@ export function Footer() {
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-6 md:flex-row">
         <div className="font-mono text-sm">
           <span className="text-foreground">vic</span>
-          <span className="text-accent">.dev</span>
+          <span className="text-accent">.qa</span>
           <span className="ml-3 text-muted-foreground">© {new Date().getFullYear()}</span>
         </div>
         <div className="flex items-center gap-6 text-sm text-muted-foreground">

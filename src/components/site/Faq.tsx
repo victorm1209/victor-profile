@@ -17,19 +17,19 @@ const faqs = [
   },
   {
     q: "¿Qué tecnologías utilizan?",
-    a: "Next.js, React, React Native, TypeScript, Node.js, Supabase y PostgreSQL como stack principal.",
+    a: "Node.js, Newman, Jmeter, Jira, Cypress, MongoDB y PostgreSQL como stack principal.",
   },
   {
     q: "¿Ofrecen mantenimiento post-lanzamiento?",
-    a: "Sí. Ofrecemos planes de soporte mensuales con SLA, monitoreo y mejoras continuas.",
+    a: "Sí. Ofrecemos planes de soporte mensuales con monitoreo y mejoras continuas.",
   },
   {
     q: "¿Trabajan con startups y empresas?",
-    a: "Sí, desde fundadores en early stage hasta equipos enterprise.",
+    a: "Sí, nos adaptamos a cualquier tipo de cliente.",
   },
   {
     q: "¿Cómo puedo comenzar un proyecto?",
-    a: "Escríbenos por el formulario o WhatsApp. Agendamos una llamada de descubrimiento gratuita.",
+    a: "Escríbenos por el formulario. Te atenderemos en menos de 24 horas para discutir tu proyecto.",
   },
 ];
 

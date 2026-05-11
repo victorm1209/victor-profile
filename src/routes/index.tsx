@@ -16,16 +16,16 @@ import { ScrollTop } from "@/components/site/ScrollTop";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "vic.dev — Artesanos en la era de la IA" },
+      { title: "vic.qa" },
       {
         name: "description",
         content:
-          "Agencia de desarrollo web y mobile. Convertimos tu idea en un producto digital rápido, bien diseñado y construido para crecer.",
+          "Ingeniero en QA. Convertimos tu idea en un producto digital rápido, bien diseñado y construido para crecer.",
       },
-      { property: "og:title", content: "vic.dev — Artesanos en la era de la IA" },
+      { property: "og:title", content: "vic.qa" },
       {
         property: "og:description",
-        content: "Agencia de desarrollo web y mobile. Productos digitales que generan resultados.",
+        content: "Ingeniero en QA. Convertimos tu idea en un producto digital rápido, bien diseñado y construido para crecer.",
       },
     ],
   }),

@@ -3,10 +3,10 @@ import { ArrowUpRight, Menu, X } from "lucide-react";
 
 const links = [
   { href: "/#servicios", label: "Servicios" },
-  { href: "/#proyectos", label: "Experiencia" },
   { href: "/#proceso", label: "Proceso" },
+  { href: "/#proyectos", label: "Experiencia" },
   // { href: "/#testimonios", label: "Testimonios" },
-  { href: "/studies", label: "Estudios" },
+  // { href: "/studies", label: "Estudios" },
   { href: "/#contacto", label: "Contacto" },
 ];
 
@@ -30,7 +30,7 @@ export function Navbar() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
         <a href="/" className="font-mono text-sm font-medium tracking-tight">
           <span className="text-foreground">vic</span>
-          <span className="text-accent">.dev</span>
+          <span className="text-accent">.qa</span>
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">

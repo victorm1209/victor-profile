@@ -9,17 +9,17 @@ const steps = [
   {
     n: "02",
     title: "Diseño",
-    desc: "Creamos wireframes y prototipos interactivos centrados en la experiencia del usuario.",
+    desc: "Creamos pruebas y prototipos interactivos centrados en la experiencia del usuario.",
   },
   {
     n: "03",
     title: "Desarrollo",
-    desc: "Construimos tu producto con código limpio, pruebas y las mejores prácticas.",
+    desc: "Construimos tu producto con código limpio, automatizaciones y las mejores prácticas.",
   },
   {
     n: "04",
     title: "Lanzamiento",
-    desc: "Desplegamos, monitoreamos y optimizamos para asegurar un rendimiento impecable.",
+    desc: "Monitoreamos y optimizamos para asegurar un rendimiento impecable.",
   },
 ];
 

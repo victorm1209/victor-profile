@@ -10,17 +10,17 @@ const services = [
   {
     icon: Bot,
     title: "Automatización",
-    desc: "Frameworks de automatización con Selenium, Cypress y Playwright. Integración continua y reportes claros.",
+    desc: "Frameworks de automatización con Cypress, Appium y Newman. Integración continua y reportes claros.",
   },
   {
     icon: Bug,
     title: "Pruebas de API",
-    desc: "Validación de endpoints REST y SOAP con Postman, RestAssured y SoapUI; contratos y datos verificados.",
+    desc: "Validación de endpoints REST y SOAP con Postman.",
   },
   {
     icon: Gauge,
     title: "Performance & Carga",
-    desc: "Pruebas de stress y carga con JMeter y K6 para garantizar estabilidad bajo demanda real.",
+    desc: "Pruebas de stress y carga con JMeter para garantizar estabilidad bajo demanda real.",
   },
   {
     icon: ShieldCheck,
@@ -29,9 +29,14 @@ const services = [
   },
   {
     icon: Workflow,
-    title: "QA en CI/CD",
-    desc: "Integración de suites en Jenkins, GitHub Actions y Azure DevOps con shift-left testing y reportes Allure.",
+    title: "Mentalidad Ágil",
+    desc: "Experiencia integrada en marcos Scrum y Kanban. Fomento la cultura de calidad desde el inicio del SDLC, facilitando la comunicación entre stakeholders y equipos de desarrollo.",
   },
+  // {
+  //   icon: Workflow,
+  //   title: "QA en CI/CD",
+  //   desc: "Integración de suites en Jenkins, GitHub Actions y Azure DevOps con shift-left testing y reportes Allure.",
+  // },
 ];
 
 export function Services() {
@@ -47,7 +52,7 @@ export function Services() {
           </div>
           <p className="max-w-md text-muted-foreground">
             Aseguramiento de calidad de extremo a extremo: desde el diseño de casos de prueba hasta
-            la automatización integrada en tu pipeline.
+            la automatización de procesos.
           </p>
         </div>
 
