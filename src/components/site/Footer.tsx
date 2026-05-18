@@ -3,12 +3,12 @@ export function Footer() {
     <footer className="border-t border-border py-12">
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-6 md:flex-row">
         <div className="font-mono text-sm">
-          <span className="text-foreground">vic</span>
-          <span className="text-accent">.qa</span>
+          <span className="text-foreground">Victor De Ascencao - </span>
+          <span className="text-accent">QA</span>
           <span className="ml-3 text-muted-foreground">© {new Date().getFullYear()}</span>
         </div>
         <div className="flex items-center gap-6 text-sm text-muted-foreground">
-          <a href="" className="hover:text-foreground">
+          <a href="https://www.linkedin.com/in/victor-de-ascencao-220984255" className="hover:text-foreground">
             LinkedIn
           </a>
           <a href="https://github.com/victorm1209" className="hover:text-foreground">

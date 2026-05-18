@@ -16,13 +16,13 @@ import { ScrollTop } from "@/components/site/ScrollTop";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "vic.qa" },
+      { title: "Victor De Ascencao - QA " },
       {
         name: "description",
         content:
           "Ingeniero en QA. Convertimos tu idea en un producto digital rápido, bien diseñado y construido para crecer.",
       },
-      { property: "og:title", content: "vic.qa" },
+      { property: "og:title", content: "Victor De Ascencao - QA" },
       {
         property: "og:description",
         content: "Ingeniero en QA. Convertimos tu idea en un producto digital rápido, bien diseñado y construido para crecer.",

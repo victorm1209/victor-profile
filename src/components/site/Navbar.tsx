@@ -29,8 +29,8 @@ export function Navbar() {
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
         <a href="/" className="font-mono text-sm font-medium tracking-tight">
-          <span className="text-foreground">vic</span>
-          <span className="text-accent">.qa</span>
+          <span className="text-foreground">Victor De Ascencao - </span>
+          <span className="text-accent">QA</span>
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
