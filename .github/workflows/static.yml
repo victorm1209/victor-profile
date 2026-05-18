@@ -31,13 +31,30 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      # 1. Instalar Bun en el entorno de GitHub Actions
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      # 2. Instalar las dependencias de tu proyecto usando Bun
+      - name: Install dependencies
+        run: bun install
+
+      # 3. Compilar el proyecto para generar la carpeta ./dist
+      - name: Build project
+        run: bun run build
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
+          # Ahora sí existirá la carpeta ./dist generada en el paso anterior
           path: "./dist"
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
