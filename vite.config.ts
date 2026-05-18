@@ -12,4 +12,7 @@ export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
   },
+  vite: {
+    base: '/victor-profile/', // 👈 Añadido para que GitHub Pages mapee bien las rutas estáticas
+  },
 });
