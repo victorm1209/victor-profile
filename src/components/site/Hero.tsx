@@ -73,7 +73,7 @@ export function Hero() {
 
         <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
           <a
-            href="/cv.pdf"
+            href="/Victor - CV (con foto).pdf"
             download
             className="group inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition-transform hover:scale-[1.03]"
           >

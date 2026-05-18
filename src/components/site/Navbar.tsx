@@ -47,7 +47,7 @@ export function Navbar() {
 
         <div className="flex items-center gap-3">
           <a
-            href="/cv.pdf"
+            href="/Victor - CV (con foto).pdf"
             download
             className="hidden items-center gap-1.5 rounded-full bg-foreground px-4 py-2 text-sm font-medium text-background transition-transform hover:scale-[1.03] md:inline-flex"
           >

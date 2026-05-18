@@ -4,39 +4,35 @@ import { SectionLabel } from "./SectionLabel";
 const projects = [
   {
     n: "01",
-    title: "All Camps Kids",
-    desc: "SaaS para gestión de campamentos con pagos integrados.",
-    tags: ["Next.js", "TypeScript", "Tailwind", "Supabase"],
+    title: "Soluciones Financieras Chinchin",
+    desc: "Plataforma de billetera digital y finanzas personales diseñada para facilitar pagos electrónicos y la gestión del dinero de forma rápida y segura.",
+    tags: ["Angular", "Bootstrap", "AI", "TypeScript"],
+    url: "https://www.pagochinchin.com/",
+    preview: "/chinchin.png",
   },
   {
     n: "02",
-    title: "Champions Truck Repair",
-    desc: "Sitio web de servicios con formularios y galería.",
-    tags: ["Next.js", "TypeScript", "Tailwind"],
+    title: "Helados Ya",
+    desc: "Aplicación de entrega a domicilio que ofrece un catálogo interactivo para agilizar la compra y distribución de helados.",
+    tags: ["React", "Tailwind", "AI"],
+    url: "https://heladosya.netlify.app/",
+    preview: "/heladosya.png",
   },
   {
     n: "03",
-    title: "Diveteca",
-    desc: "E-commerce veterinario con pasarela de pagos y CMS.",
-    tags: ["Next.js", "TypeScript", "Tailwind"],
+    title: "Bodega Osman",
+    desc: "Tienda en línea para la venta de snacks, con un flujo de compra intuitivo para el usuario.",
+    tags: ["React", "Tailwind", "AI"],
+    url: "https://bodega-osman.vercel.app/",
+    preview: "/bodegaosman.png",
   },
   {
     n: "04",
-    title: "Madre Mia Store",
-    desc: "E-commerce skincare con pagos y gestión de productos.",
-    tags: ["Next.js", "TypeScript", "Tailwind"],
-  },
-  {
-    n: "05",
-    title: "Mykonos Greek",
-    desc: "Comercio electrónico con admin y carrito completo.",
-    tags: ["Next.js", "Supabase", "Node.js"],
-  },
-  {
-    n: "06",
-    title: "Textiles Studio",
-    desc: "Tienda de textiles con recomendaciones de productos.",
-    tags: ["Next.js", "TypeScript", "Tailwind"],
+    title: "Business Soluciones Financieras Chinchin",
+    desc: "Portal corporativo y pasarela de pagos para empresas, enfocado en la gestión de cobros masivos, conciliación bancaria y administración de puntos de venta virtuales.",
+    tags: ["Angular", "Bootstrap", "AI", "TypeScript"],
+    url: "https://business.pagochinchin.com/auth/login",
+    preview: "/business.png",
   },
 ];
 
@@ -61,13 +57,18 @@ export function Projects() {
           {projects.map((p) => (
             <a
               key={p.n}
-              href="#"
+              href={p.url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group relative overflow-hidden rounded-2xl border border-border bg-card p-8 transition-all hover:-translate-y-1 hover:border-accent/40"
             >
+              {/* Preview de la imagen */}
               <div className="aspect-[16/9] overflow-hidden rounded-xl bg-gradient-to-br from-secondary via-card to-background">
-                <div className="flex h-full w-full items-center justify-center">
-                  <span className="font-display text-7xl font-bold text-foreground/10">{p.n}</span>
-                </div>
+                <img
+                  src={p.preview}
+                  alt={`Preview de ${p.title}`}
+                  className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                />
               </div>
               <div className="mt-6 flex items-start justify-between gap-4">
                 <div>
