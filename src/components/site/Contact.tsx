@@ -53,7 +53,8 @@ export function Contact() {
                     <div className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
                       Ubicación
                     </div>
-                    <div className="mt-1">España · Venezuela · Remoto global</div>
+                    <div className="mt-1">Venezuela · Remoto global</div>
+                    {/* <div className="mt-1">España · Venezuela · Remoto global</div> */}
                   </div>
                 </div>
               </div>

@@ -46,7 +46,8 @@ export function Hero() {
       <div className="mx-auto max-w-6xl px-6 text-center">
         <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/40 px-4 py-1.5 font-mono text-[11px] uppercase tracking-widest text-muted-foreground backdrop-blur">
           <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-          Ingeniero de Control de Calidad · QA
+          {/* Ingeniero de Control de Calidad · QA */}
+          Control de Calidad · QA
         </span>
 
         <h1
