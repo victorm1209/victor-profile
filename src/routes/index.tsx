@@ -20,12 +20,15 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Ingeniero en QA. Convertimos tu idea en un producto digital rápido, bien diseñado y construido para crecer.",
+          // "Ingeniero en QA. Convertimos tu idea en un producto digital rápido, bien diseñado y construido para crecer.",
+          "Convertimos tu idea en un producto digital rápido, bien diseñado y construido para crecer.",
       },
       { property: "og:title", content: "Victor De Ascencao - QA" },
       {
         property: "og:description",
-        content: "Ingeniero en QA. Convertimos tu idea en un producto digital rápido, bien diseñado y construido para crecer.",
+        content:
+          "Convertimos tu idea en un producto digital rápido, bien diseñado y construido para crecer.",
+        // content: "Ingeniero en QA. Convertimos tu idea en un producto digital rápido, bien diseñado y construido para crecer.",
       },
     ],
   }),
